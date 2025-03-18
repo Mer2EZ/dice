@@ -6,6 +6,7 @@ Created on Tue Mar 18 10:46:47 2025
 """
 
 import numpy.random as rand
+import os
 
 def d20(i):
     return rand.randint(1,21,i)
@@ -39,7 +40,7 @@ menu="""
 [q] - quit
 """
 
-inp=str(input("Enter '0' for start."))
+inp=str(input("Enter '0' for start: "))
 
 while inp!='q':
     print(menu)
@@ -52,18 +53,34 @@ while inp!='q':
     num=int(input("Number of dice: "))
     
     if inp=='20':
+        os.system('cls')
         print(d20(num))
+        input("To continue press 'enter' ")
     elif inp=='12':
+        os.system('cls')
         print(d12(num))
+        input("To continue press 'enter' ")
     elif inp=='10':
+        os.system('cls')
         print(d10(num))
+        input("To continue press 'enter' ")
     elif inp=='100':
+        os.system('cls')
         print(d100(num))
+        input("To continue press 'enter' ")
     elif inp=='8':
+        os.system('cls')
         print(d8(num))
+        input("To continue press 'enter' ")
     elif inp=='6':
+        os.system('cls')
         print(d6(num))
+        input("To continue press 'enter' ")
     elif inp=='4':
+        os.system('cls')
         print(d4(num))
+        input("To continue press 'enter' ")
     else:
+        os.system('cls')
         print("error")
+        input("To continue press 'enter' ")
